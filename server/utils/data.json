@@ -1,0 +1,57 @@
+{
+  "surgicalBuilding": {
+    "description": "on the ls block b",
+    "latitude": 27.706380583331583,
+    "longitude": 85.31351440048844
+  },
+  "surgicalBlock": {
+    "description": "on the ls block b",
+    "latitude": 27.706193256334938,
+    "longitude": 85.31381724594408
+  },
+  "emergencyWard": {
+    "description": "on the ls block b",
+    "latitude": 27.705576794747536,
+    "longitude": 85.31373673577968
+  },
+  "birHospitalPharmacy": {
+    "description": "on the ls block b",
+    "latitude": 27.705451648745026,
+    "longitude": 85.31377117416662
+  },
+  "birHospitalUroDepartment": {
+    "description": "on the ls block b",
+    "latitude": 27.705552124403045,
+    "longitude": 85.31359178420051
+  },
+  "departmentOfNephrologyAndTransplantMedicine": {
+    "description": "on the ls block b",
+    "latitude": 27.705700410938988,
+    "longitude": 85.3133600950262
+  },
+  "birHospitalDentalDepartment": {
+    "description": "on the ls block b",
+    "latitude": 27.704886696531922,
+    "longitude": 85.31341109818239
+  },
+  "birHospitalCardiologyCentre": {
+    "description": "on the ls block b",
+    "latitude": 27.704820055958837,
+    "longitude": 85.31298046847084
+  },
+  "theRadioGraphyRoom": {
+    "description": "on the ls block b",
+    "latitude": 27.70641133045588,
+    "longitude": 85.31348984688728
+  },
+  "birHospitalParking": {
+    "description": "on the ls block b",
+    "latitude": 27.706154266886315,
+    "longitude": 85.3132250872742
+  },
+  "hemoDialysisBirHospital": {
+    "description": "on the ls block b",
+    "latitude": 27.70564330747631,
+    "longitude": 85.31300759552019
+  }
+}
