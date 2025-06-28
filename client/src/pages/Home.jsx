@@ -52,7 +52,9 @@ const Home = () => {
 
           <div className="hero-visual" id="qr">
             <div className="qr-container floating">
-              <div className="qr-code">📱</div>
+              <div className="qr-code">
+                <img src="/assets/qr.png" alt="qr" srcset="" />
+              </div>
               <div className="qr-label">Scan for Access</div>
             </div>
           </div>

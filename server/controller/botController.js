@@ -30,7 +30,7 @@ export const botHandler = async (req, res) => {
     }
 
     // ☎️ Contact
-    else if (msg.includes("contact")) {
+    else if (msg.includes("contact") || msg.includes("contact ")) {
       twiml.message(
         `☎️ Hospital Contact:\n` +
           `📞 Counter: 9847744334\n` +
@@ -76,10 +76,7 @@ export const botHandler = async (req, res) => {
             `🕒 Expected Service Time: *${formattedTime}*`
         );
       }
-    }
-
-    // ❓ Unknown Command
-    else {
+    } else {
       twiml.message(
         `🤖 Hello ${ProfileName}, please type *join*, *status <token>*, or *contact* for help.`
       );

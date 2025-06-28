@@ -12,24 +12,23 @@ import {
   Cell,
 } from "recharts";
 import "../styles/dashboard.css"; // Import the corresponding CSS file
+import axios from "axios";
 
 const Dashboard = () => {
   const [current, setCurrent] = useState("5");
-  const [limit, setLimit] = useState("50");
+  const [limit, setLimit] = useState("0");
   const [showModal, setShowModal] = useState(false);
   const [newLimit, setNewLimit] = useState("");
 
   useEffect(() => {
     // Simulating API call - replace with actual axios call
+
     const getCurrentPatient = async () => {
       try {
-        // Simulated response
-        const mockResponse = {
-          currentToken: "5",
-          limit: "50",
-        };
-        setCurrent(mockResponse.currentToken);
-        setLimit(mockResponse.limit);
+        const res = await axios.get("http://localhost:3001/api/getpatient");
+        setCurrent(res.data.currentToken);
+        setLimit(res.data.limit);
+        console.log(res);
       } catch (error) {
         console.log("Error fetching the data on load");
       }
@@ -40,8 +39,9 @@ const Dashboard = () => {
   const nextPatient = async () => {
     try {
       // Simulated API call
-      const newCurrent = String(parseInt(current) + 1);
-      setCurrent(newCurrent);
+      const res = await axios.post("http://localhost:3001/api/increasepatient");
+      // const newCurrent = String(parseInt(current) + 1);
+      setCurrent(res.data.currentToken);
     } catch (error) {
       console.log("err in the inc patient", error);
     }
@@ -65,7 +65,11 @@ const Dashboard = () => {
   const handleLimitSubmit = async () => {
     if (newLimit.trim() && !isNaN(newLimit) && parseInt(newLimit) > 0) {
       try {
-        setLimit(newLimit);
+        // Simulated API call to set the limit
+        const res = await axios.post("http://localhost:3001/api/setlimit", {
+          limit: newLimit,
+        });
+        setLimit(res.data.limit);
         handleModalClose();
       } catch (error) {
         console.log("Error setting limit", error);
