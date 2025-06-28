@@ -51,7 +51,7 @@ A simple **Dashboard** to:
 
 - ⛔ Eliminates unnecessary crowding at OPD counters
 - 🧘 Reduces stress by giving patients control over their wait
-- 📲 No app installs — just use WhatsApp
+- 📲 No app installs — just use WhatsApp.
 
 ---
 
